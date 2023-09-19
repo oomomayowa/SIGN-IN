@@ -12,9 +12,9 @@ const App =()=> {
   return (
     <>
      <Routes >
-      <Route path='/' element={<Land/>}/>
+      {/* <Route path='/' element={<Land/>}/> */}
       <Route path='/dashboard' element={token?<Dashboard/>:<Navigate to ="/signIn"/>}/>
-      <Route path='/signup' element={<SignUp/>}/>
+      <Route path='/' element={<SignUp/>}/>
       <Route path='/signIn' element={<SignIn/>}/>
       </Routes>   
     </>
