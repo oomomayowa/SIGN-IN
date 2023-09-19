@@ -10,7 +10,7 @@ const App =()=> {
   return (
     <>
      <Routes >
-      <Route path='/' element={home}/>
+      <Route path='/' element={<home/>}/>
       <Route path='/dashboard' element={token?<Dashboard/>:<Navigate to ="/signIn"/>}/>
       <Route path='/signup' element={<SignUp/>}/>
       <Route path='/signIn' element={<SignIn/>}/>
